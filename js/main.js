@@ -149,10 +149,10 @@ window.addEventListener('DOMContentLoaded', function(e){
     let weatherContainer = document.getElementsByClassName('weather-container')[0];
     console.log(weatherContainer);
     if (isDayTime()){
-        weatherContainer.style.backgroundImage = 'url(https://img.freepik.com/free-photo/sunshine-clouds-sky-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1094.jpg?t=st=1718737059~exp=1718740659~hmac=48e33efaee7cbec4d7a83ad9ec9975a396a3596dbc43500cf3f9b9e305e81e70&w=106)';
+        weatherContainer.style.background = 'linear-gradient(to right,#2e4e8d,#526fa2,#7c98c9)';
     }
     else{
-        weatherContainer.style.backgroundImage = 'url(https://img.freepik.com/free-photo/beautiful-night-sky-with-shiny-stars_53876-138570.jpg?w=1060&t=st=1718736763~exp=1718737363~hmac=87286b28cae139d00c0e34732fcde36b1499723465ece4b0b7dcf0a0d62e1ba9)';
+        weatherContainer.style.background = 'linear-gradient(to right,#1a2843,#1e3c72,#2a5298)';
     }
     console.log('HIIII');
 });

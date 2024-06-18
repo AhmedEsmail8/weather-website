@@ -12,12 +12,16 @@ body{
 }
 
 .weather-container{
-    /* background-image: url(../images/background-day.png); */
-    background-image: url('https://img.freepik.com/free-photo/beautiful-night-sky-with-shiny-stars_53876-138570.jpg?w=1060&t=st=1718736763~exp=1718737363~hmac=87286b28cae139d00c0e34732fcde36b1499723465ece4b0b7dcf0a0d62e1ba9');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     /* background-color: #1e2234; */
+    background: #1e3c72;
+  /* background: linear-gradient(
+    to right,
+    #2e4e8d,#526fa2,#7c98c9
+  );
+  background: linear-gradient(
+    to right,
+    #1a2843,#1e3c72,#2a5298
+  ); */
     width: 100%;
     top: 0px;
 }
