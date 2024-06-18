@@ -146,15 +146,15 @@ function formatTime(time){
 
 window.addEventListener('DOMContentLoaded', function(e){
     getForecast();
-    let weatherContainer = document.getElementsByClassName('weather-container')[0];
-    console.log(weatherContainer);
-    if (isDayTime()){
-        weatherContainer.style.backgroundImage = 'url(../images/background-day.png)';
-    }
-    else{
-        weatherContainer.style.backgroundImage = 'url(../images/background-night.png)';
-    }
-    console.log('HIIII');
+    // let weatherContainer = document.getElementsByClassName('weather-container')[0];
+    // console.log(weatherContainer);
+    // if (isDayTime()){
+    //     weatherContainer.style.backgroundImage = 'url(../images/background-day.png)';
+    // }
+    // else{
+    //     weatherContainer.style.backgroundImage = 'url(../images/background-night.png)';
+    // }
+    // console.log('HIIII');
 });
 
 
