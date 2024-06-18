@@ -145,7 +145,7 @@ function formatTime(time){
     return ans;
 }
 
-window.addEventListener('DOMContentLoaded', function(e){
+document.addEventListener('DOMContentLoaded', function(e){
     getCurrentLocation();
     let weatherContainer = document.getElementsByClassName('weather-container')[0];
     console.log(weatherContainer);
