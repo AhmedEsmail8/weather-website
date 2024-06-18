@@ -56,27 +56,9 @@ getCities();
 searchCity.addEventListener('input', function(e){
     
     if (e.target.value.length >= 3){
-        // area.innerHTML = e.target.value;
-        
-        let citiesTmp = cities;
-        if (citiesTmp.filter(matchCity).length == 0)
-            return;
-        let res = citiesTmp.filter(matchCity)[0];
-        res = res.toString().replace(/ \([A-Za-z]*\)/, '')
-        console.log(res);
-        getForecast(res)
+        getForecast(e.target.value)
     }
 })
-
-function matchCity(city){
-    let inputTmp = searchCity.value;
-    let words = inputTmp.split(' ')
-    for (let i=0; i<words.length; i++){
-        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-    }
-    words = words.join(' ');
-    return city.startsWith(words);
-}
 
 function getForecast(q='cairo', days=4){
     var xml = new XMLHttpRequest()
