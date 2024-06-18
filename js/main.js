@@ -17,6 +17,29 @@ var searchCity = document.getElementsByTagName('input')[0];
 var searchCountry = document.getElementsByTagName('input')[1];
 var cities = []
 var currentRespose = -1
+var weatherContainer = document.getElementsByClassName('weather-container')[0];
+
+
+function isDayTime(){
+    const now = new Date();
+    const currentHour = now.getHours();
+    const dayStart = 6;
+    const dayEnd = 18;
+
+    if (currentHour >= dayStart && currentHour < dayEnd){
+        return true; // It's daytime
+    }
+    else {
+        return false; // It's nighttime
+    }
+}
+
+if (isDayTime()){
+    weatherContainer.style.backgroundImage = 'url(../images/background-day.png)';
+}
+else{
+    weatherContainer.style.backgroundImage = 'url(../images/background-night.png)';
+}
 
 function getCities(){
     let citiesConn = new XMLHttpRequest()
@@ -145,33 +168,11 @@ function formatTime(time){
     return ans;
 }
 
-document.addEventListener('DOMContentLoaded', function(e){
-    getCurrentLocation();
-    let weatherContainer = document.getElementsByClassName('weather-container')[0];
-    if (isDayTime()){
-        weatherContainer.style.backgroundImage = 'url(../images/background-day.png)';
-    }
-    else{
-        console.log('here');
-        weatherContainer.style.backgroundImage = 'url(../images/background-night.png)';
-    }
-    console.log('HIIII');
-});
+getForecast('cairo');
 
 
-function isDayTime(){
-    const now = new Date();
-    const currentHour = now.getHours();
-    const dayStart = 6;
-    const dayEnd = 18;
 
-    if (currentHour >= dayStart && currentHour < dayEnd){
-        return true; // It's daytime
-    }
-    else {
-        return false; // It's nighttime
-    }
-}
+
 
 cBtn.addEventListener('click', function(e){
     cBtn.classList.add('fw-bolder', 'text-white');
