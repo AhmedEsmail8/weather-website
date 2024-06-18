@@ -13,7 +13,7 @@ body{
 
 .weather-container{
     /* background-image: url(../images/background-day.png); */
-    /* background-image: url(../images/background-night.png); */
+    background-image: url(../images/background-night.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

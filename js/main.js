@@ -148,11 +148,11 @@ function formatTime(time){
 document.addEventListener('DOMContentLoaded', function(e){
     getCurrentLocation();
     let weatherContainer = document.getElementsByClassName('weather-container')[0];
-    console.log(weatherContainer);
     if (isDayTime()){
         weatherContainer.style.backgroundImage = 'url(../images/background-day.png)';
     }
     else{
+        console.log('here');
         weatherContainer.style.backgroundImage = 'url(../images/background-night.png)';
     }
     console.log('HIIII');
@@ -165,10 +165,12 @@ function isDayTime(){
     const dayStart = 6;
     const dayEnd = 18;
 
-    if (currentHour >= dayStart && currentHour < dayEnd)
+    if (currentHour >= dayStart && currentHour < dayEnd){
         return true; // It's daytime
-    else 
+    }
+    else {
         return false; // It's nighttime
+    }
 }
 
 cBtn.addEventListener('click', function(e){
