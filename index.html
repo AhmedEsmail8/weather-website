@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="weather-container p-5 text-white">
+        <div class="row flex-lg-row flex-column-reverse">
+            <div class="col-lg-6 text-lg-start text-center">
+                <h1 id="area">Heliopolis</h1>
+                <p class="text-white-50" id="date">Monday, 17 June 2024 | 04:41 AM</p>
+            </div>
+            <div class="col-lg-6 mb-lg-0 mb-5">
+                <div class="input-group">
+                    <input type="search" class="form-control border-0 z-0 text-white" placeholder="Type a city or location..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <!-- <input type="search" class="form-control border-0 z-0 text-white border-start border-1 border-black" placeholder="Country (optional)" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                    <button class="btn rounded-2 d-flex justify-content-center align-items-center" id="locationBtn">
+                        <img src="icons/location-dark.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mt-5 mb-5 justify-content-center">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="d-flex align-items-center">
+                    <h2 class="current-weather" id="currentWeather">26</h2>
+                    <div class="d-flex flex-column justify-content-center ms-4">
+                        <div class="fs-4">
+                            <div class="d-flex align-items-center">
+                                <span id="cBtn" class="fw-bolder">°C</span>
+                                <div class="bg-white separator ms-2 me-2"></div>
+                                <span id="fBtn">°F</span>
+                            </div>
+                            <p class="m-0 p-0" id="currentState">Clear</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5 d-lg-block d-flex justify-content-center">
+                <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                    <!-- <img class="today-icon" src="//cdn.weatherapi.com/weather/64x64/night/113.png" alt=""> -->
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="icons/feels-like.svg" alt="">
+                                <p class="m-0 p-0 ms-2">Feels like: <span id="feelsLike">26</span>°C</p>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="icons/humidity.svg" alt="">
+                                <p class="m-0 p-0 ms-2">Humidity: <span id="humidity">47</span>%</p>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <img src="icons/wind.svg" alt="">
+                                <p class="m-0 p-0 ms-2">Wind: <span id="wind">5</span> km/h</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row days-container p-4 rounded-4 gy-5 gy-lg-0">
+            <div class="col-lg-3">
+                <div class="weather-card text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-4 p-lg-0 p-4">
+                    <span class="weather-card-day text-white-50">Monday</span>
+                    <img class="weather-card-icon mb-2" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                    <span class="fs-5 weather-card-weather">39° - 26°</span>
+                    <span class="weather-card-status text-white-50">Sunny</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="weather-card text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-4 p-lg-0 p-4">
+                    <span class="weather-card-day text-white-50">Monday</span>
+                    <img class="weather-card-icon mb-2" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                    <span class="fs-5 weather-card-weather">39° - 26°</span>
+                    <span class="weather-card-status text-white-50">Sunny</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="weather-card text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-4 p-lg-0 p-4">
+                    <span class="weather-card-day text-white-50">Monday</span>
+                    <img class="weather-card-icon mb-2" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                    <span class="fs-5 weather-card-weather">39° - 26°</span>
+                    <span class="weather-card-status text-white-50">Sunny</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="weather-card text-center w-100 d-flex flex-column justify-content-center align-items-center rounded-4 p-lg-0 p-4">
+                    <span class="weather-card-day text-white-50">Monday</span>
+                    <img class="weather-card-icon mb-2" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                    <span class="fs-5 weather-card-weather">39° - 26°</span>
+                    <span class="weather-card-status text-white-50">Sunny</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

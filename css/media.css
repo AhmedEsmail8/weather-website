@@ -1,0 +1,45 @@
+/* sm */
+@media (min-width: 576px) {
+    
+}
+
+/* md */
+@media (min-width: 768px) {
+    :root{
+        font-size: 16px;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    .weather-container{
+        width: 60%;
+        border-radius: 2rem;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .days-container{
+        background-color: #30326353;
+    }
+    
+    .weather-card{
+        background-color: transparent;
+    }
+    
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    
+}
+
+/* xxl */
+@media (min-width: 1400px) {
+
+}

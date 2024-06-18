@@ -1,0 +1,75 @@
+:root{
+    font-size: 13px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(../images/fullpage-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.weather-container{
+    /* background-image: url(../images/background-day.png); */
+    /* background-image: url(../images/background-night.png); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    top: 0px;
+}
+
+#area{
+    word-wrap: break-word;
+}
+
+button{
+    background-color: #E0E3FF !important;
+}
+
+button:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+input{
+    background-color: #273161 !important;
+}
+
+.separator{
+    width: 2px;
+    height: 25px;
+}
+
+.current-weather{
+    font-weight: 300;
+    font-size: 7.25rem;
+}
+
+.today-icon{
+    width: 100px;
+}
+
+.weather-card{
+    background-color: #30326353;
+}
+
+input::placeholder{
+    color: #ffffff65 !important;
+}
+
+.weather-card img{
+    width: 70px;
+}
+
+#cBtn:hover,
+#fBtn:hover{
+    color: #fff !important;
+}
+
+#cBtn, #fBtn{
+    cursor: pointer;
+    color: #ffffff77;
+}
