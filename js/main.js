@@ -34,19 +34,6 @@ function isDayTime(){
 }
 
 
-
-function getCities(){
-    let citiesConn = new XMLHttpRequest()
-    citiesConn.open('GET', 'https://gist.githubusercontent.com/bhatmand/fe7b44bfe6174b4fe368b9032a00d8a1/raw/610f638910019d1e4b9283b4f143688ca4b55169/all-countries-cities-array.json')
-    citiesConn.send()
-    citiesConn.addEventListener('load', function(e){
-        cities = JSON.parse(citiesConn.response);
-        console.log(cities)
-    })
-}
-
-getCities();
-
 searchCity.addEventListener('input', function(e){
     
     if (e.target.value.length >= 3){
@@ -56,7 +43,7 @@ searchCity.addEventListener('input', function(e){
 
 function getForecast(q='cairo', days=4){
     var xml = new XMLHttpRequest()
-    xml.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=1782423c5204415fa11174236241706&q=${q}&days=${days}`)
+    xml.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=c9ed7237ba7a4bf8bf7212226240907&q=${q}&days=${days}`)
     xml.send()
     xml.addEventListener('load', function (e) {
         currentRespose = JSON.parse(xml.response);
